@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8"><meta name="viewport"
+      content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#08060d"><meta name="description"
+      content="Checkout demonstrativo Kronix Store.">
+    <title>Finalizar pedido | KRONIX STORE</title>
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet"
+      href="css/checkout.css">
+  </head>
+  <body class="checkout-page">
+    <div class="topbar">KRONIX STORE · FINALIZAÇÃO DO PEDIDO</div>
+    <header><div class="wrap nav"><a class="brand" href="index.html"><img
+            src="assets/kronix-logo.png" alt="Kronix Store"></a><a
+          class="navbtn" href="index.html#produtos">← VOLTAR À
+          LOJA</a></div></header>
+    <main class="wrap checkout-wrap">
+      <div class="checkout-heading"><div class="eyebrow">Quase
+          lá</div><h1>FINALIZE SEU <span
+            class="gradient">PEDIDO.</span></h1><p>Confira o produto e informe
+          seus dados para continuar.</p></div>
+      <div class="checkout-grid">
+        <section class="checkout-card order-card">
+          <div class="card-title"><span>01</span><div><h2>Resumo do
+                pedido</h2><p>Revise sua seleção</p></div></div>
+          <div class="order-product"><div class="product-mark">K</div><div
+              class="order-info"><strong id="product-name">DS8
+                AI</strong><small>Produto selecionado</small></div><strong
+              class="order-price" id="product-price">R$ 697,00</strong></div>
+          <div class="order-line"><span>Subtotal</span><strong id="subtotal">—</strong></div>
+          <div class="order-line"><span>Entrega</span><strong>R$ 00,00</strong></div>
+          <div class="order-total"><span>Total</span><strong id="total">—</strong></div>
+          <p class="secure-note">🔒 Seus dados devem ser enviados somente por um
+            meio de pagamento seguro configurado pela loja.</p>
+        </section>
+        <section class="checkout-card form-card">
+          <form id="checkout-form">
+            <div class="card-title"><span>02</span><div><h2>Seus
+                  dados</h2><p>Preencha para solicitar o pedido</p></div></div>
+            <label for="name">Nome completo</label><input id="name" name="name"
+              autocomplete="name" required
+              placeholder="Como podemos chamar você?">
+            <label for="email">E-mail</label><input id="email" name="email"
+              type="email" autocomplete="email" required
+              placeholder="voce@email.com">
+            <label for="platform">Plataforma / dispositivo
+              (opcional)</label><select id="platform" name="platform"><option
+                value>Selecione se
+                aplicável</option><option>PC</option><option>PlayStation
+                5</option><option>PlayStation
+                4</option><option>Xbox</option><option>Outro / Não se
+                aplica</option></select>
+            <label for="notes">Observações (opcional)</label><textarea
+              id="notes" name="notes" rows="3"
+              placeholder="Dúvidas ou detalhes sobre seu pedido"></textarea>
+            <label class="check-row"><input type="checkbox" id="terms"
+                required><span>Confirmo que revisei as informações e quero
+                solicitar atendimento sobre este produto.</span></label>
+            <button class="btn checkout-submit" id="checkout-submit" type="submit" disabled>SOLICITAR PEDIDO
+              <span>→</span></button>
+            <p class="form-footnote" id="price-warning" role="status">O preço deste produto ainda precisa ser configurado pela loja. Nenhum
+              pagamento será cobrado ou processado aqui.</p>
+            <div class="success-message" id="success-message" role="status"
+              aria-live="polite" hidden></div>
+          </form>
+        </section>
+      </div>
+      <p class="checkout-back"><a href="index.html">← Continuar navegando na
+          KRONIX STORE</a></p>
+    </main>
+    <footer><div class="wrap foot"><div>© 2026 KRONIX STORE. Todos os direitos
+          reservados.</div><div>Compra e pagamento sujeitos à configuração da
+          loja.</div></div></footer>
+    <script src="js/products.js" defer></script>
+    <script src="js/checkout.js" defer></script>
+  </body></html>
